@@ -57,6 +57,7 @@ namespace TestSoln.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+            ViewBag.A = "123";
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
